@@ -120,6 +120,7 @@
 	    	//loadWholePage(selectedInfo);
 		    	
 		    //	getPageData(selectedInfo);
+		    	alert("Link" +selectedInfo);
 		    	
 		    	var HtmlIFrame = new sap.ui.core.HTML({
 					  content: 
