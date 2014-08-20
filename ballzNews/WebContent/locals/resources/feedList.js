@@ -127,8 +127,8 @@
 		    	var HtmlIFrame = new sap.ui.core.HTML({
 					  content: 
 						  
-	//"<div><object type='text/html' data=" + selectedInfo + "width='800px' height='600px' style='overflow:auto;border:5px ridge blue'> </object></div>"	
-						  "<div><object type='text/html' data=" + selectedInfo + "style='overflow:auto'></object></div>"
+	"<div><object type='text/html' data=" + selectedInfo + "width='800px' height='600px' style='overflow:auto;border:5px ridge blue'> </object></div>"	
+						 // "<div><object type='text/html' data=" + selectedInfo + "style='overflow:auto'></object></div>"
 			    							  
 						//  "<div id='container' style='overflow: scroll'></div>"
 						
