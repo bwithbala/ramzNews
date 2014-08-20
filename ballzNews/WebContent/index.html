@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="Ballz News" content="">
+<meta name="Balakrishnan" content="">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<script type="text/javascript" src="js/spin.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+
+
+<style type="text/css">
+
+		#content{
+ 		    background-image:url('images/Telangana_logo.jpg') !important;
+		}
+
+		.sapMFeedListItemText{
+		    background-color:transparent !important;
+			display: block !important;
+			font-weight: bold !important;
+            word-wrap:break-word !important; 
+			font-size: 0.8rem !important;
+			color:green !important;
+			word-break: break-word;
+		}   		
+		
+		   .sapMFeedListItemTextName a  {
+		    background-color:transparent !important;
+			display: block !important;
+			font-weight: bold !important;
+            word-wrap:break-word !important;
+			font-size: 0.8rem !important;
+			color:red !important;
+			word-break: break-word !important;
+		    display: flex !important;
+			flex-wrap: wrap !important;
+            justify-content: space-around !important; 
+		}   		
+		
+		.sapMFeedListItemTextName{
+		word-wrap:break-word !important;
+		word-break: break-word;
+		}
+		.sapMLnk sapMLnkDsbl sapMLnkMaxWidth{
+		word-wrap:break-word !important;
+		word-break: break-word;
+		}
+		
+		#diviframe{
+		  overflow: scroll;
+		}
+		#iframeiframe{
+		  overflow: scroll;
+		}
+		
+		</style>		
+		
+		
+		
+		
+</head>
+<body class="sapUiBody" role="application">
+	
+	<div id="content"> </div>
+	<!--   <div id="container" style="overflow: scroll"></div>-->
+	
+</body>
+
+        <script>
+		 oApplication.load(	"https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
+							"sap-ui-bootstrap",
+							"sap.m,sap.ui.commons",
+							"sap_bluecrystal",
+							oApplication.onSAPUI5Loaded );
+	    </script>
+	    
+	    <script>
+/* 	    $("#container").load("http://www.maalaimalar.com/RSS/SectionRssFeed.aspx?Id=1&Main=18"); */
+	    </script>
+	    
+			<script>
+			
+			
+			
+			
+			$(function() {
+				
+				
+				//Enable swiping...
+				$("#content").swipe( {
+					
+					//Generic swipe handler for all directions
+					swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+					//	$(this).text("You swiped " + direction );
+					 	if (direction == "right" && fingerCount == "2")
+						{ 
+							
+ 					      //  alert("You Swiped:" +direction);
+							//alert("Finger Count: " +fingerCount);
+							//alert("Finger Data: " +fingerData); 
+							
+/* 							oPopover.setPlacement(sap.m.PlacementType.Left);
+							oPopover.openBy(this); */
+							
+							oActionSheet.setPlacement(sap.m.PlacementType.Vertical);
+							oActionSheet.setShowCancelButton(false);
+							oActionSheet.openBy(this);							
+						}
+					 	if (direction == "left" && fingerCount == "2")
+						{ 
+							
+ 					        alert("You Swiped:" +direction);
+							alert("Finger Count: " +fingerCount);
+							//alert("Finger Data: " +fingerData); 
+							
+							//oPopover.close();
+						}					 	
+
+						
+					},
+					
+					
+					//Default is 75px, set to 0 for demo so any distance triggers swipe
+				   threshold:0,
+				   fingers:'all'
+				});
+			});
+			</script>		    
+
+</html>
