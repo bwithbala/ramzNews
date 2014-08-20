@@ -128,7 +128,7 @@
 						
 						  "<div id='diviframe' style='overflow: scroll'>" + 
 						  "<iframe id='iframeiframe'" +
-						  //selectedInfo +
+						  selectedInfo +
 						  //"width=\"200\" height=\"500\" " +
 						  //"scrolling=\"yes\" +
 						  " > </iframe>" +
