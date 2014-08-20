@@ -122,18 +122,24 @@
 		    //	getPageData(selectedInfo);
 		    	alert("Link" +selectedInfo);
 		    	
+
+		    	
 		    	var HtmlIFrame = new sap.ui.core.HTML({
 					  content: 
 						  
+	"<div><object type='text/html' data=" + selectedInfo + "width='800px' height='600px' style='overflow:auto;border:5px ridge blue'> </object></div>"	
+			    	   	    	
+			    							  
+						  
 						//  "<div id='container' style='overflow: scroll'></div>"
 						
-						  "<div id='diviframe' style='overflow: scroll'>" + 
+/*						  "<div id='diviframe' style='overflow: scroll'>" + 
 						  "<iframe id='iframeiframe'" +
 						  selectedInfo +
 						  //"width=\"200\" height=\"500\" " +
 						  //"scrolling=\"yes\" +
 						  " > </iframe>" +
-						  "</div>"
+						  "</div>"*/
 						  
 		    	//"<div id=\"diviframe\" style=\"overflow: scroll\"><iframe id=\"iframeiframe\" src=\"http://www.maalaimalar.com\" ></iframe></div>" 						  
 						  
