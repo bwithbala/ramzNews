@@ -14,7 +14,7 @@ jQuery.sap.require("locals.resources.feedList");
 			}).addEventDelegate({
 				onBeforeShow: function(evt) {
 					newsLink = evt.data.payloadInfo;
-					$("#iframeiframe").attr('src', newsLink);	
+					//$("#iframeiframe").attr('src', newsLink);	
 /*					var page = newsLink;
 
 				var $dialog = $('<div></div>')
